@@ -12,28 +12,36 @@ export default function Component() {
     } = useUserIterator();
     return (
           <div className="py-2 px-4 flex flex-col items-center ">
-              <div className="">
                 { 
                   user ?
-                  <User
-                    {...user}
-                  />:
-                  <span>No user yet</span>
+                  <div className="
+                    hover:bg-amber-400
+                    flex justify-center w-4/6 w-4/6 bg-emerald-400 border-black border-8">
+                    <div className="border-white border-4 w-[50%] ">
+                      <User
+                        {...user}
+                      />
+                    </div>
+                  </div>:
+                  <span> Loading</span>
                  }
-              </div>
-              <div className="flex space-between mt-2">
-              <button
-                onClick={prev}
-                type="button" 
-                className="text-black py-2 px-4 rounded">
-                  Prev
-              </button>
-              <button 
-                onClick={next}
-                type="button" 
-                className="text-black py-2 px-4 rounded">
-                  Next
-              </button>
+              <div className="flex justify-between flex-row mt-2 w-4/6">
+                <div className="w-[33%] p-8">
+                  <button
+                    onClick={prev}
+                    type="button" 
+                    className="w-full text-black py-2 px-4 rounded">
+                      Prev
+                  </button>
+                </div>
+                <div className="w-[33%] p-8">
+                  <button 
+                    onClick={next}
+                    type="button" 
+                    className="w-full text-black py-2 px-4 rounded">
+                      Next
+                  </button>
+                </div>
               </div>
 
           </div>

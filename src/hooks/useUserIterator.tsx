@@ -13,6 +13,7 @@ export const useUserIterator = (url: string) => {
 
   const next = async() => {
     const currentIdx = getCurrentIdx(users);
+
     if(users[currentIdx + 1]){
       setUser(users[currentIdx +1])
     }else{
@@ -24,6 +25,7 @@ export const useUserIterator = (url: string) => {
 
   const prev = async() => {
     const currentIdx = getCurrentIdx(users);
+    
     if(currentIdx === 0){
       return 
     }else{
