@@ -1,3 +1,9 @@
+## Luis Q. Notes!
+ Project was built using yarn, and package-lock.json was removed to avoid conflicts.
+ Project was built using Node v21.6.2
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
